@@ -25,20 +25,15 @@ onMounted(() => {
     // },
     url: attrs.url as string,
     poster: attrs.poster as string,
+    width: "100%",
+    height: "100%",
     fluid: deviceDetection(),
     //传入倍速可选数组
     playbackRate: [0.5, 0.75, 1, 1.5, 2]
   });
-  console.log(attrs);
 });
 </script>
 
 <template>
   <div />
 </template>
-
-<style scoped>
-#mse {
-  flex: auto;
-}
-</style>
